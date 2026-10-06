@@ -126,7 +126,7 @@
         }
 
         /* Dark/light image overlay */
-        .hero::after {
+        /* .hero::after {
             content: "";
             position: absolute;
             inset: 0;
@@ -136,7 +136,7 @@
                 rgba(0,0,0,0)
             );
             pointer-events: none;
-        }
+        } */
 
         /* =========================
            LEFT INFORMATION CARD
@@ -155,7 +155,7 @@
         }
 
         .booking-strip {
-            height: 42px;
+            height: 35px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -173,7 +173,7 @@
         .info-content h1 {
             font-size: 23px;
             line-height: 1.2;
-            margin-bottom: 8px;
+            margin-bottom: 5px;
             font-weight: 800;
             color: #292929;
         }
@@ -258,7 +258,7 @@
         }
 
         .offer-inner {
-            min-height: 85px;
+            /* min-height: 85px; */
             border: 2px dashed #fff;
             color: #fff;
             display: flex;
@@ -431,17 +431,19 @@
             }
 
             .hero {
-                height: calc(100vh - 58px);
-                min-height: 650px;
+                height: auto;
+
+                position: static;
+                min-height: 225px;
                 background-position: 65% center;
             }
 
             .info-card {
-                top: 100px;
+                top: 300px;
                 left: 50%;
                 transform: translateX(-50%);
-                width: calc(100% - 24px);
-                max-width: 350px;
+                width: calc(100% - 10px);
+                /* max-width: 350px; */
             }
 
             .slider-dots {
@@ -808,6 +810,7 @@
 @media (max-width: 600px) {
 
     .welcome-section {
+        margin-top: 400px;
         padding: 28px 18px;
     }
 
